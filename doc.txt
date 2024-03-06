@@ -1,0 +1,124 @@
+namespace aula3;
+
+class Program
+{
+    static void Main(string[] args)
+
+    {   Console.WriteLine("digite um numero : ");
+        double b = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("digite um numero : ");
+        double a = double.Parse(Console.ReadLine());
+        double total = a + b;
+
+        Console.WriteLine($"o resultado é " + total);
+    }
+}
+
+
+
+
+
+
+
+
+*******************************************************************************************************************************************************************
+**************************************************************************************************************************************************
+
+
+
+
+using System.Runtime.InteropServices;
+
+namespace aula3;
+
+class Program
+{
+    static void Main(string[] args)
+
+    {
+
+
+        //CRIAÇÃO DO VETOR
+        int[] a = { 10, 5, 8 };
+        double[] b = { 4.6, 8.2, 9.0 };
+        string[] c = { "carlos", "João", "Maria", "Pedro", "Beto" };
+
+
+
+
+
+        //ESCREVENDO UM V ALOR DE UMA POSIÇÃO
+        /*  Console.WriteLine(a[0]);
+          Console.WriteLine(b[1]);
+          Console.WriteLine(c[2]);*/
+
+
+
+
+        //COPIANDO O VALOR DE UMA POSIÇÃO PARA UMA VARIÁVEL
+        int x1 = a[2];
+        double x2 = b[0];
+        string x3 = c[1];
+
+
+        //VER A QUANTIDADE DE ITENS DE VETORES
+        int qtd1 = a.Length;
+        int qtd2 = b.Length;
+        int qtd3 = c.Length;
+        Console.WriteLine(qtd3);
+
+        //ALTERANDOOS VALORES DAS POSIÇÕES
+
+        a[2] = 0;
+        b[5] = 100;
+        c[0] = "Fulano";
+        
+        
+        
+        
+        
+        
+        
+                //ITERAR O VETOR
+        for (int pos = 0; pos < a.Length; pos++)
+        {
+            int item = a[pos];
+            Console.WriteLine(item);
+        }
+
+
+        for (int pos = 0; pos < b.Length; pos++)
+        {
+            double item = b[pos];
+            Console.WriteLine(item);
+        }
+
+
+        for (int pos = 0; pos < c.Length; pos++)
+        {
+            string item = c[pos];
+            Console.WriteLine(item);
+        }
+
+        //Outra maneira de iterar
+
+        foreach (int item in a)
+        {
+            Console.WriteLine(item);
+        }
+
+
+        foreach (double item in b)
+        {
+            Console.WriteLine(item);
+        }
+
+
+        foreach (string item in c)
+        {
+            Console.WriteLine(item);
+        }
+
+    }
+}
